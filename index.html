@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let countRow = prompt('Введите число');
+        let countSpaces = countRow - 1;
+        let result = '';
+        for (let a = 1; a <= countRow; a++) {
+
+            for (let c = 1; c <= countSpaces; c++) {
+                result += ' ';
+            }            
+            countSpaces--;
+
+            for (let b = 1; b <= (a * 2) - 1; b++) {
+                result += '*'
+            }
+            result += '\n';
+        }
+        
+        alert(result);
+    </script>
+    
+</body>
+</html>
